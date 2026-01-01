@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Roller</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dice Roller</h1>
+        <div class="selection">
+            <div class="selecting">
+                <label class="label">Select number of faces for dice: </label>
+                <select name="number" id="selector">
+                    <option value="default" id="default">Select</option>
+                    <option value="4" id="option1">4</option>
+                    <option value="6" id="option2">6</option>
+                    <option value="8" id="option3">8</option>
+                    <option value="10" id="option4">10</option>
+                    <option value="12" id="option5">12</option>
+                    <option value="20" id="option6">20</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="output" id="output-container"><h1 id="output"></h1></div>
+        <script src="./script.js"></script>
+    </div>
+</body>
+</html>
