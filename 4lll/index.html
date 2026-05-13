@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4LLL Bold Dark Mode</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #020617; /* Deepest Navy */
+            color: #f8fafc;
+            line-height: 1.5;
+        }
+        .algo-card {
+            transition: all 0.2s ease-in-out;
+            background-color: #0f172a; /* Navy Blue Card */
+            border: 2px solid #1e293b;
+        }
+        .algo-card:hover {
+            border-color: #3b82f6;
+            background-color: #1e293b;
+            transform: scale(1.02);
+        }
+        .notation {
+            font-family: 'JetBrains Mono', monospace;
+            letter-spacing: -0.02em;
+        }
+        img {
+            background-color: #1e293b;
+            min-height: 140px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #64748b;
+            font-weight: 800;
+            text-align: center;
+            border-radius: 1rem;
+        }
+        .section-badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body class="p-6 md:p-12">
+
+    <div class="max-w-6xl mx-auto">
+        <header class="text-center mb-16">
+            <h1 class="text-6xl md:text-8xl font-black text-white mb-4 tracking-tighter">4LLL</h1>
+            <p class="text-xl md:text-2xl text-slate-400 font-bold uppercase tracking-widest">Master the Last Layer</p>
+        </header>
+
+        <section class="mb-20">
+            <div class="section-badge bg-yellow-500/20 text-yellow-400">Step 1</div>
+            <h2 class="text-3xl font-black text-white mb-8 flex items-center gap-4">
+                OLL Edges (Cross)
+                <div class="flex-1 h-1 bg-yellow-500/20 rounded-full"></div>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- DOT -->
+                <div class="algo-card p-8 rounded-3xl flex flex-col items-center">
+                    <img src="dot.png" alt="DOT" class="w-40 h-40 object-contain mb-6" onerror="this.alt='dot.png'">
+                    <div class="w-full text-center">
+                        <span class="block text-xs font-black text-yellow-500 uppercase tracking-[0.3em] mb-3">DOT</span>
+                        <p class="notation text-lg font-bold text-white bg-slate-950 p-4 rounded-2xl border-2 border-slate-800 shadow-inner">
+                            F (R U R' U') F' f (R U R' U') f'
+                        </p>
+                    </div>
+                </div>
+                <!-- L-Shape -->
+                <div class="algo-card p-8 rounded-3xl flex flex-col items-center">
+                    <img src="L.png" alt="L" class="w-40 h-40 object-contain mb-6" onerror="this.alt='L.png'">
+                    <div class="w-full text-center">
+                        <span class="block text-xs font-black text-yellow-500 uppercase tracking-[0.3em] mb-3">L-Shape</span>
+                        <p class="notation text-lg font-bold text-white bg-slate-950 p-4 rounded-2xl border-2 border-slate-800 shadow-inner">
+                            f (R U R' U') f'
+                        </p>
+                    </div>
+                </div>
+                <!-- Line -->
+                <div class="algo-card p-8 rounded-3xl flex flex-col items-center">
+                    <img src="line.png" alt="LINE" class="w-40 h-40 object-contain mb-6" onerror="this.alt='line.png'">
+                    <div class="w-full text-center">
+                        <span class="block text-xs font-black text-yellow-500 uppercase tracking-[0.3em] mb-3">Line</span>
+                        <p class="notation text-lg font-bold text-white bg-slate-950 p-4 rounded-2xl border-2 border-slate-800 shadow-inner">
+                            F (R U R' U') F'
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-20">
+            <div class="section-badge bg-blue-500/20 text-blue-400">Step 2</div>
+            <h2 class="text-3xl font-black text-white mb-8 flex items-center gap-4">
+                OLL Corners
+                <div class="flex-1 h-1 bg-blue-500/20 rounded-full"></div>
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Row 1 -->
+                <div class="algo-card p-6 rounded-3xl">
+                    <img src="Sune.png" alt="SUNE" class="w-full h-32 object-contain mb-4" onerror="this.alt='Sune.png'">
+                    <span class="block text-[10px] font-black text-blue-400 uppercase tracking-widest mb-2">SUNE</span>
+                    <p class="notation text-sm font-bold text-blue-50 bg-slate-950 p-3 rounded-xl border border-slate-800">R U R' U R U2 R'</p>
+                </div>
+                <div class="algo-card p-6 rounded-3xl">
+                    <img src="Antisune.png" alt="ANTISUNE" class="w-full h-32 object-contain mb-4" onerror="this.alt='Antisune.png'">
+                    <span class="block text-[10px] font-black text-blue-400 uppercase tracking-widest mb-2">ANTISUNE</span>
+                    <p class="notation text-sm font-bold text-blue-50 bg-slate-950 p-3 rounded-xl border border-slate-800">L' U' L U' L' U2 L</p>
+                </div>
+                <div class="algo-card p-6 rounded-3xl">
+                    <img src="H.png" alt="H" class="w-full h-32 object-contain mb-4" onerror="this.alt='H.png'">
+                    <span class="block text-[10px] font-black text-blue-400 uppercase tracking-widest mb-2">H</span>
+                    <p class="notation text-sm font-bold text-blue-50 bg-slate-950 p-3 rounded-xl border border-slate-800">F (R U R' U')3 F'</p>
+                </div>
+                <div class="algo-card p-6 rounded-3xl">
+                    <img src="Pi.png" alt="PI" class="w-full h-32 object-contain mb-4" onerror="this.alt='Pi.png'">
+                    <span class="block text-[10px] font-black text-blue-400 uppercase tracking-widest mb-2">PI</span>
+                    <p class="notation text-sm font-bold text-blue-50 bg-slate-950 p-3 rounded-xl border border-slate-800">R U2 R2 U' R2 U' R2 U2 R</p>
+                </div>
+                <!-- Row 2 -->
+                <div class="algo-card p-6 rounded-3xl">
+                    <img src="Headlights.png" alt="HEADLIGHTS" class="w-full h-32 object-contain mb-4" onerror="this.alt='Headlights.png'">
+                    <span class="block text-[10px] font-black text-blue-400 uppercase tracking-widest mb-2">HEADLIGHTS</span>
+                    <p class="notation text-sm font-bold text-blue-50 bg-slate-950 p-3 rounded-xl border border-slate-800">R2 D (R' U2 R) D' (R' U2 R')</p>
+                </div>
+                <div class="algo-card p-6 rounded-3xl">
+                    <img src="T.png" alt="T" class="w-full h-32 object-contain mb-4" onerror="this.alt='T.png'">
+                    <span class="block text-[10px] font-black text-blue-400 uppercase tracking-widest mb-2">T</span>
+                    <p class="notation text-sm font-bold text-blue-50 bg-slate-950 p-3 rounded-xl border border-slate-800">(r U R' U') (r' F R F')</p>
+                </div>
+                <div class="algo-card p-6 rounded-3xl">
+                    <img src="Bowtie.png" alt="BOWTIE" class="w-full h-32 object-contain mb-4" onerror="this.alt='Bowtie.png'">
+                    <span class="block text-[10px] font-black text-blue-400 uppercase tracking-widest mb-2">BOWTIE</span>
+                    <p class="notation text-sm font-bold text-blue-50 bg-slate-950 p-3 rounded-xl border border-slate-800">F' (r U R' U') (r' F R)</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-20">
+            <div class="section-badge bg-red-500/20 text-red-400">Step 3</div>
+            <h2 class="text-3xl font-black text-white mb-8 flex items-center gap-4">
+                PLL Corners
+                <div class="flex-1 h-1 bg-red-500/20 rounded-full"></div>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="algo-card p-8 rounded-3xl flex flex-col md:flex-row items-center gap-8">
+                    <img src="No Headlights.png" alt="Y-Perm" class="w-32 h-32 object-contain" onerror="this.alt='No Headlights.png'">
+                    <div class="flex-1 w-full text-center md:text-left">
+                        <span class="block text-xs font-black text-red-400 uppercase tracking-[0.2em] mb-3">No Headlights (Y-Perm)</span>
+                        <p class="notation text-base font-bold text-white bg-slate-950 p-4 rounded-2xl border border-slate-800">
+                            F R U' R' U' R U R' F' (R U R' U') (R' F R F')
+                        </p>
+                    </div>
+                </div>
+                <div class="algo-card p-8 rounded-3xl flex flex-col md:flex-row items-center gap-8">
+                    <img src="Headlights Back.png" alt="Aa-Perm" class="w-32 h-32 object-contain" onerror="this.alt='Headlights Back.png'">
+                    <div class="flex-1 w-full text-center md:text-left">
+                        <span class="block text-xs font-black text-red-400 uppercase tracking-[0.2em] mb-3">Headlights Back (Aa-Perm)</span>
+                        <p class="notation text-base font-bold text-white bg-slate-950 p-4 rounded-2xl border border-slate-800">
+                            x (R' U R') D2 (R U' R') D2 R2 x'
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-20">
+            <div class="section-badge bg-emerald-500/20 text-emerald-400">Step 4</div>
+            <h2 class="text-3xl font-black text-white mb-8 flex items-center gap-4">
+                PLL Edges
+                <div class="flex-1 h-1 bg-emerald-500/20 rounded-full"></div>
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="algo-card p-6 rounded-3xl">
+                    <img src="Ua.png" alt="UA" class="w-full h-32 object-contain mb-4" onerror="this.alt='Ua.png'">
+                    <span class="block text-[10px] font-black text-emerald-400 uppercase tracking-widest mb-2">Ua PERM</span>
+                    <p class="notation text-sm font-bold text-white bg-slate-950 p-3 rounded-xl border border-slate-800 text-center">M2 U M U2 M' U M2</p>
+                </div>
+                <div class="algo-card p-6 rounded-3xl">
+                    <img src="Ub.png" alt="UB" class="w-full h-32 object-contain mb-4" onerror="this.alt='Ub.png'">
+                    <span class="block text-[10px] font-black text-emerald-400 uppercase tracking-widest mb-2">Ub PERM</span>
+                    <p class="notation text-sm font-bold text-white bg-slate-950 p-3 rounded-xl border border-slate-800 text-center">M2 U' M U2 M' U' M2</p>
+                </div>
+                <div class="algo-card p-6 rounded-3xl">
+                    <img src="Z.png" alt="Z" class="w-full h-32 object-contain mb-4" onerror="this.alt='Z.png'">
+                    <span class="block text-[10px] font-black text-emerald-400 uppercase tracking-widest mb-2">Z PERM</span>
+                    <p class="notation text-sm font-bold text-white bg-slate-950 p-3 rounded-xl border border-slate-800 text-center">M2 U' M2 U' M' U2 M2 U2 M'</p>
+                </div>
+                <div class="algo-card p-6 rounded-3xl">
+                    <img src="H Perm.png" alt="H" class="w-full h-32 object-contain mb-4" onerror="this.alt='H Perm.png'">
+                    <span class="block text-[10px] font-black text-emerald-400 uppercase tracking-widest mb-2">H PERM</span>
+                    <p class="notation text-sm font-bold text-white bg-slate-950 p-3 rounded-xl border border-slate-800 text-center">(M2 U) (M2 U2) (M2 U) M2</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
